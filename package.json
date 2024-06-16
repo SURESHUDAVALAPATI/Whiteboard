@@ -1,4 +1,5 @@
 {
+  "homepage": "https://SURESHUDAVALAPATI.github.io/digiboard",
   "name": "digiboard",
   "private": true,
   "scripts": {
@@ -8,7 +9,9 @@
     "build:next": "next build",
     "build": "npm-run-all build:*",
     "start": "cross-env NODE_ENV=production node build/index.js",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages - build"
   },
   "dependencies": {
     "express": "^4.17.3",
